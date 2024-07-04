@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
 /*
 ! tailwindcss v3.4.4 | MIT License | https://tailwindcss.com
-*//*
+*/
+
+/*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
 */
@@ -11,7 +15,7 @@
   box-sizing: border-box; /* 1 */
   border-width: 0; /* 2 */
   border-style: solid; /* 2 */
-  border-color: currentColor; /* 2 */
+  border-color: #e5e7eb; /* 2 */
 }
 
 ::before,
@@ -317,6 +321,7 @@ menu {
 /*
 Reset default styling for dialogs.
 */
+
 dialog {
   padding: 0;
 }
@@ -357,6 +362,7 @@ button,
 /*
 Make sure disabled buttons don't get the pointer cursor.
 */
+
 :disabled {
   cursor: default;
 }
@@ -390,11 +396,12 @@ video {
 }
 
 /* Make elements with the HTML hidden attribute stay hidden by default */
+
 [hidden] {
   display: none;
 }
 
-*, ::before, ::after {
+*, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -448,7 +455,7 @@ video {
   --tw-contain-style:  ;
 }
 
-::backdrop {
+::backdrop{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -501,227 +508,268 @@ video {
   --tw-contain-paint:  ;
   --tw-contain-style:  ;
 }
-.absolute {
+.absolute{
   position: absolute;
 }
-.relative {
+.relative{
   position: relative;
 }
-.sticky {
-  position: sticky;
-}
-.bottom-0 {
+.bottom-0{
   bottom: 0px;
 }
-.left-10 {
+.bottom-4{
+  bottom: 1rem;
+}
+.left-10{
   left: 2.5rem;
 }
-.left-72 {
+.left-24{
+  left: 6rem;
+}
+.left-48{
+  left: 12rem;
+}
+.left-72{
   left: 18rem;
 }
-.left-8 {
+.left-8{
   left: 2rem;
 }
-.top-10 {
+.top-10{
   top: 2.5rem;
 }
-.top-24 {
+.top-16{
+  top: 4rem;
+}
+.top-24{
   top: 6rem;
 }
-.mx-2 {
+.mx-2{
   margin-left: 0.5rem;
   margin-right: 0.5rem;
 }
-.my-0 {
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-.my-1 {
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
-}
-.mx-60 {
+.mx-60{
   margin-left: 15rem;
   margin-right: 15rem;
 }
-.ml-10 {
+.my-0{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.my-1{
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+.ml-10{
   margin-left: 2.5rem;
 }
-.ml-2 {
+.ml-2{
   margin-left: 0.5rem;
 }
-.ml-4 {
+.ml-4{
   margin-left: 1rem;
 }
-.ml-72 {
+.ml-72{
   margin-left: 18rem;
 }
-.mr-4 {
+.mr-4{
   margin-right: 1rem;
 }
-.mt-12 {
+.mt-12{
   margin-top: 3rem;
 }
-.mt-2 {
+.mt-2{
   margin-top: 0.5rem;
 }
-.mt-4 {
+.mt-4{
   margin-top: 1rem;
 }
-.block {
+.mt-8{
+  margin-top: 2rem;
+}
+.block{
   display: block;
 }
-.flex {
+.flex{
   display: flex;
 }
-.size-8 {
+.size-8{
   width: 2rem;
   height: 2rem;
 }
-.h-52 {
+.h-52{
   height: 13rem;
 }
-.h-96 {
-  height: 24rem;
-}
-.h-full {
+.h-full{
   height: 100%;
 }
-.min-h-screen {
+.min-h-screen{
   min-height: 100vh;
 }
-.w-full {
+.w-75\%{
+  width: 75%;
+}
+.w-full{
   width: 100%;
 }
-.w-44 {
-  width: 11rem;
+@keyframes fade-right{
+
+  0%{
+    opacity: 0;
+    transform: translateX(-2rem);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
-.w-56 {
-  width: 14rem;
+.animate-fade-right{
+  animation: fade-right var(--tw-animate-duration, 1s) var(--tw-animate-easing, ease) var(--tw-animate-delay, 0s) var(--tw-animate-iteration, 1) var(--tw-animate-fill, both);
 }
-.w-64 {
-  width: 16rem;
-}
-.w-72 {
-  width: 18rem;
-}
-.w-96 {
-  width: 24rem;
-}
-.resize {
+.resize{
   resize: both;
 }
-.items-center {
+.items-center{
   align-items: center;
 }
-.gap-1 {
+.gap-1{
   gap: 0.25rem;
 }
-.rounded-lg {
+.rounded-lg{
   border-radius: 0.5rem;
 }
-.border-2 {
+.border-2{
   border-width: 2px;
 }
-.border-b-2 {
+.border-4{
+  border-width: 4px;
+}
+.border-b-2{
   border-bottom-width: 2px;
 }
-.border-transparent {
-  border-color: transparent;
+.border-double{
+  border-style: double;
 }
-.border-black {
+.border-black{
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
-.bg-pasto {
+.border-transparent{
+  border-color: transparent;
+}
+.bg-pasto{
   --tw-bg-opacity: 1;
   background-color: rgb(164 178 132 / var(--tw-bg-opacity));
 }
-.bg-imagen {
+.bg-imagen{
   background-image: url('https://res.cloudinary.com/damoqjwmk/image/upload/v1719593614/Estudio%20Juridico/fondo.jpg');
 }
-.bg-cover {
+.bg-cover{
   background-size: cover;
 }
-.bg-center {
+.bg-center{
   background-position: center;
 }
-.p-6 {
+.p-6{
   padding: 1.5rem;
 }
-.pb-32 {
+.pb-32{
   padding-bottom: 8rem;
 }
-.text-left {
+.text-left{
   text-align: left;
 }
-.text-center {
+.text-center{
   text-align: center;
 }
-.text-4xl {
+.font-cursiva{
+  font-family: Dancing Script;
+}
+.text-4xl{
   font-size: 2.25rem;
   line-height: 2.5rem;
 }
-.text-lg {
+.text-6xl{
+  font-size: 3.75rem;
+  line-height: 1;
+}
+.text-lg{
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
-.font-medium {
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+.font-medium{
   font-weight: 500;
 }
-.font-normal {
+.font-normal{
   font-weight: 400;
 }
-.text-black {
+.text-black{
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
-.transition {
+.shadow-2xl{
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.transition{
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
-.delay-150 {
+.delay-150{
   transition-delay: 150ms;
 }
-.duration-300 {
+.duration-300{
   transition-duration: 300ms;
 }
-.ease-in {
+.duration-700{
+  transition-duration: 700ms;
+}
+.ease-in{
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
-.ease-in-out {
+.ease-in-out{
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.hover\:-translate-y-1:hover {
+.hover\:-translate-y-1:hover{
   --tw-translate-y: -0.25rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
-.hover\:scale-110:hover {
+.hover\:scale-110:hover{
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
-.hover\:border-b-2:hover {
+.hover\:border-b-2:hover{
   border-bottom-width: 2px;
 }
-.hover\:border-white:hover {
+.hover\:border-white:hover{
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
-.hover\:text-purple:hover {
+.hover\:bg-pasto:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(164 178 132 / var(--tw-bg-opacity));
+}
+.hover\:text-purple:hover{
   --tw-text-opacity: 1;
   color: rgb(63 60 187 / var(--tw-text-opacity));
 }
-@media (min-width: 1024px) {
+@media (min-width: 1024px){
 
-  .lg\:mt-0 {
+  .lg\:mt-0{
     margin-top: 0px;
   }
 
-  .lg\:inline-block {
+  .lg\:inline-block{
     display: inline-block;
   }
 }
