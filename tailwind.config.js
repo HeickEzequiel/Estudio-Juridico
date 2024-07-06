@@ -27,6 +27,7 @@ export default {
         'bubble-gum': '#ff77e9',
         'bermuda': '#78dcca',
         'black':'#000000',
+        'naranja':'#E6843D'
       },
       spacing:{
         '75%':'75%'

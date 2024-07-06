@@ -639,9 +639,6 @@ video {
 .rounded-lg{
   border-radius: 0.5rem;
 }
-.border-2{
-  border-width: 2px;
-}
 .border-4{
   border-width: 4px;
 }
@@ -661,6 +658,10 @@ video {
 .bg-pasto{
   --tw-bg-opacity: 1;
   background-color: rgb(164 178 132 / var(--tw-bg-opacity));
+}
+.bg-naranja{
+  --tw-bg-opacity: 1;
+  background-color: rgb(230 132 61 / var(--tw-bg-opacity));
 }
 .bg-imagen{
   background-image: url('https://res.cloudinary.com/damoqjwmk/image/upload/v1719593614/Estudio%20Juridico/fondo.jpg');
@@ -739,30 +740,72 @@ video {
 .ease-in-out{
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.boton{
+  margin-top: 1rem;
+  margin-right: 1rem;
+  display: block;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-delay: 150ms;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.boton:hover{
+  --tw-translate-y: -0.25rem;
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  border-bottom-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(230 132 61 / var(--tw-border-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 1024px){
+
+  .boton{
+    margin-top: 0px;
+    display: inline-block;
+  }
+}
+
 .hover\:-translate-y-1:hover{
   --tw-translate-y: -0.25rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
+
 .hover\:scale-110:hover{
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
+
 .hover\:border-b-2:hover{
   border-bottom-width: 2px;
 }
+
 .hover\:border-white:hover{
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
+
 .hover\:bg-pasto:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(164 178 132 / var(--tw-bg-opacity));
 }
+
 .hover\:text-purple:hover{
   --tw-text-opacity: 1;
   color: rgb(63 60 187 / var(--tw-text-opacity));
 }
+
 @media (min-width: 1024px){
 
   .lg\:mt-0{
