@@ -14,8 +14,8 @@ function Footer() {
                 </div>
             </div>
             <div className=' mr-4 my-1' >
-              <h2 className="text-lg font-normal text-center">Escribinos a</h2>
-              <p className="text-lg font-normal my-0.1 text-center">lorenablanco@gmail.com</p>
+              <h2 className="lg:text-lg font-normal lg:text-center xs:relative xs:text-right xs:-top-7 xs:mr-5">Escribinos a</h2>
+              <p className="lg:text-lg font-normal lg:my-0.1 lg:text-center xs:relative xs:text-right xs:-top-6 xs:-mr-3">lorenablanco@gmail.com</p>
             </div>
         </footer>
       )

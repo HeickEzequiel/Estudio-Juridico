@@ -31,7 +31,10 @@ export default {
       },
       spacing:{
         '75%':'75%'
-      }
+      },
+      screens:{
+        'xs':'320px',
+      },
     },
     
   },
