@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./src/**/*.{html,jsx,js}",
-    "./index.html"
+    "./index.html",
   ],
   
   theme: {
@@ -30,11 +30,28 @@ export default {
         'naranja':'#E6843D'
       },
       spacing:{
-        '75%':'75%'
+        '75%':'75%',
+        '70%':'70%',
+        '65%':'65%',
+        '60%':'60%',
+        '55%':'55%',
+        '50%':'50%',
+        '45%':'45%',
+        '40%':'40%',
+        '35%':'35%',
+        '30%':'30%',
+        '25%':'25%',
+        '20%':'20%',
+        '15%':'15%',
+        '10%':'10%'
       },
       screens:{
         'xs':'320px',
       },
+      transitionDuration:{
+        '2000':'2000ms'
+        
+      }
     },
     
   },
@@ -42,7 +59,11 @@ export default {
     borderwidth: ['responsive', 'hover', 'focus']
   },
   plugins: [
-    require('tailwindcss-animated')
+    require('tailwindcss-animated'),
+    require('tailwindcss-intersect')
+
   ],
+
+
 }
 
