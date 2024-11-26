@@ -16,6 +16,7 @@
     "@tanstack/react-query": "^5.48.0",
     "@tanstack/react-query-devtools": "^5.48.0",
     "axios": "^1.7.2",
+    "flyonui": "^1.1.0",
     "postcss-cli": "^11.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

@@ -7,7 +7,7 @@ import Footer from "../footer/Footer"
 function Team() {
   Observer.start()
   return (
-    <div >
+    <div className="text-black">
         <Nav/>
         <div className="bg-gradient-to-r from-white to-rose-400">
         <div className=" relative left-96 "><AdvancedImage cldImg={linea}/></div>

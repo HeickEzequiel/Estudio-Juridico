@@ -6,7 +6,7 @@ import { gmail, linea, map, whatsapp } from "../../config/cloudinary"
 function Contact() {
   
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-hidden text-black">
         <Nav/>
         <div className="bg-gradient-to-r from-white to-rose-400">
         <div className=" relative left-96 "><AdvancedImage cldImg={linea}/></div>

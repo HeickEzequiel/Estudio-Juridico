@@ -2,6 +2,7 @@
 export default {
   content: ["./src/**/*.{html,jsx,js}",
     "./index.html",
+    "./node_modules/flyonui/dist/js/*.js",
   ],
   
   theme: {
@@ -30,6 +31,10 @@ export default {
         'naranja':'#E6843D'
       },
       spacing:{
+        '95%':'95%',
+        '90%':'90%',
+        '85%':'85%',
+        '80%':'80%',
         '75%':'75%',
         '70%':'70%',
         '65%':'65%',
@@ -43,7 +48,8 @@ export default {
         '25%':'25%',
         '20%':'20%',
         '15%':'15%',
-        '10%':'10%'
+        '10%':'10%',
+        '5%':'5%'
       },
       screens:{
         'xs':'320px',
@@ -60,7 +66,9 @@ export default {
   },
   plugins: [
     require('tailwindcss-animated'),
-    require('tailwindcss-intersect')
+    require('tailwindcss-intersect'),
+    require("flyonui"),
+    require("flyonui/plugin"),
 
   ],
 
