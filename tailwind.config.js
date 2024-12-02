@@ -2,9 +2,9 @@
 export default {
   content: ["./src/**/*.{html,jsx,js}",
     "./index.html",
-    "./node_modules/flyonui/dist/js/*.js",
+    "./node_modules/tw-elements/js/**/*.js"
   ],
-  
+
   theme: {
     
     extend: {
@@ -67,11 +67,12 @@ export default {
   plugins: [
     require('tailwindcss-animated'),
     require('tailwindcss-intersect'),
-    require("flyonui"),
-    require("flyonui/plugin"),
+    require("tw-elements/plugin.cjs"),
+
 
   ],
 
+  darkMode:"class"
 
 }
 

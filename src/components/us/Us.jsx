@@ -3,14 +3,18 @@ import Footer from "../footer/Footer"
 import Nav from "../nav/Nav"
 import { linea, oficina, recepcion, reunion } from "../../config/cloudinary"
 import { Observer } from 'tailwindcss-intersect'
+import { useEffect } from "react"
 
 function Us() {
-  Observer.start()
+  
+  useEffect(()=>{
+    Observer.start()    
+  })
   
   return (
     <div className="min-w-min min-h-max overflow-hidden text-black">
       <Nav/>
-        <div className="bg-gradient-to-r from-white to-rose-400 ">
+        <div className="bg-gradient-to-r from-white to-rose-400">
           <div className=" lg:relative lg:left-96 "><AdvancedImage cldImg={linea}/></div>
         
           <div className="lg:relative">
